@@ -3,22 +3,22 @@ Modular Linux Production, final version (1.0)
 <br/>
 
 # Requirements
-* Linux - Ubuntu > 18.0
+* Linux - Ubuntu > 18.0<br/>
 <br/>
-* Python > 3.7
-* OpenMM 8.1.1
-* Haddock3 3.0 (dictates biopython version)
-* biopython 1.78
-* freesasa 2.2.1
-* MDAnalysis 2.3.0
-* mdTraj 1.10
-* pdbfixer 1.9.0
-* pandas 1.5.1
+* Python > 3.7<br/>
+* OpenMM 8.1.1<br/>
+* Haddock3 3.0 (dictates biopython version)<br/>
+* biopython 1.78<br/>
+* freesasa 2.2.1<br/>
+* MDAnalysis 2.3.0<br/>
+* mdTraj 1.10<br/>
+* pdbfixer 1.9.0<br/>
+* pandas 1.5.1<br/>
 <br/>
 
-If coarse-grained protocol is to be used
-* martini_openmm 0.1
-* vermouth (Martinizer) 0.10.0
+If coarse-grained protocol is to be used<br/>
+* martini_openmm 0.1<br/>
+* vermouth (Martinizer) 0.10.0<br/>
 <br/>
 
 # Usage
@@ -28,6 +28,7 @@ Basic inputs: <br/>
 -o -> Directory. Will contain all of the outputs from the code, separated by each pair of linked proteins<br/>
 <br/>
 Other inputs: <br/>
+-h -> Shows help info inside the terminal.<br/>
 -f -> CSV file name. Will only analyze the named file. Must be present in input folder<br/>
 -x -> Crosslinker name. Used to manually change all crosslinkers.<br/>
 -m -> Choice of \<SWISS\> or \<AF\>. Will determine the preferred database to fetch PDB files. Either from SwissModel/Uniprot (SWISS) or AlphaFold repository (AF).<br/>
@@ -46,5 +47,5 @@ Advanced Inputs: <br/>
 --skip_simulation2 -> Boolean, default False. If True, will skip checking for interprotein crosslinks.<br/>
 <br/>
 * Notes<br/>
-If a specific PDB/Fasta files are to be used, simply replace the files under ```pdb_fa_files/``` folder following the naming convention \<Protein\>\_\<Species\>.pdb or \<Protein\>\_\<Species\>.fa.<br/>
-Same is available for the docked structure by placing the file \<Protein1\>\_\<Protein2\>.pdb under ```OpenMM_sim``` (```CG_OpenMM``` for the coarse-grained protocol) <br/>
+If a specific PDB/Fasta files are to be used, simply place the files ```Protein_Species.pdb``` or ```Protein_Species.fa``` under the ```pdb_fa_files/``` folder.<br/>
+Same is available for the docked structure by placing the file ```Protein1_Protein2.pdb``` under ```OpenMM_sim``` (```CG_OpenMM``` for the coarse-grained protocol) <br/>
