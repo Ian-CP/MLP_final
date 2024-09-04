@@ -12,7 +12,7 @@ Molecular Linux Production, final version (1.0)
 * pdbfixer 1.9.0
 * pandas 1.5.1
 
-if coarse-grained simulation is being used
+If coarse-grained protocol is to be used
 * martini_openmm 0.1
 * vermouth (Martinizer) 0.10.0
 
