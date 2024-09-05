@@ -4,7 +4,7 @@ Modular Linux Production, final version (1.0)
 
 # Requirements
 * Linux - Ubuntu > 18.0<br/>
-<br/>
+
 * Python > 3.7<br/>
 * OpenMM 8.1.1<br/>
 * Haddock3 3.0 (dictates biopython version)<br/>
