@@ -27,13 +27,13 @@ Basic inputs: <br/>
 -i -> Directory. Contains the CSV files with the crosslinked results.<br/>
 -o -> Directory. Will contain all of the outputs from the code, separated by each pair of linked proteins<br/>
 <br/>
-Other inputs: <br/>
+Other inputs (Optional): <br/>
 -h -> Shows help info inside the terminal.<br/>
 -f -> CSV file name. Will only analyze the named file. Must be present in input folder<br/>
 -x -> Crosslinker name. Used to manually change all crosslinkers.<br/>
 -m -> Choice of \<SWISS\> or \<AF\>. Will determine the preferred database to fetch PDB files. Either from SwissModel/Uniprot (SWISS) or AlphaFold repository (AF).<br/>
 <br/>
-Advanced Inputs: <br/>
+Advanced Inputs (Optional): <br/>
 --remove_buried -> Boolean, default True. If True, will use FreeSaSa to determine which residues are solvent innaccessible and remove them from consideration. <br/>
 --reject_interspecies -> Boolean/String, defaults False. If True, will reject protein pairs that are of different species. If a species is named, will only consider pairs of that species.<br/>
 --protein -> String. Will limit the analysis to protein pairs that contain at least 1 of the desired protein.<br/>
