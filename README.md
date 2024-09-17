@@ -36,7 +36,7 @@ $ python modular_linux_production_AA6.py -i input -o output --protein PREX1 --re
 
 <br/>TSC1/TSC2/TBCD7 - multimer <br/>
 ```
-$ python modular_linux_production_AA6.py -i input -o output -f TSC_WIPI3_multimer_peptides.csv --reject_interspecies HUMAN 
+$ python modular_linux_production_AA6.py -i input -o output -f TSC_WIPI3_multimer_peptides.csv --reject_interspecies HUMAN --skip_simulation2
 ```
 <br/>
 
