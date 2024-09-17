@@ -20,31 +20,17 @@ If coarse-grained protocol is to be used<br/>
 * martini_openmm 0.1<br/>
 * vermouth (Martinizer) 0.10.0<br/>
 <br/>
+# Example
+PREX1 - <br/>
+NF1 - Homodimer <br/>
+AFF4 - HIV1 Heterodimer <br/>
 
 # Usage
 Basic inputs: <br/>
 ```>> $ python modular_linux_production_AA4.py -i <input_folder> -o <output_folder>```<br/><br/>
 -i -> Directory. Contains the CSV files with the crosslinked results.<br/>
 -o -> Directory. Will contain all of the outputs from the code, separated by each pair of linked proteins<br/>
-<br/>
-Other inputs (Optional): <br/>
--h -> Shows help info inside the terminal.<br/>
--f -> CSV file name. Will only analyze the named file. Must be present in input folder<br/>
--x -> Crosslinker name. Used to manually change all crosslinkers.<br/>
--m -> Choice of \<SWISS\> or \<AF\>. Will determine the preferred database to fetch PDB files. Either from SwissModel/Uniprot (SWISS) or AlphaFold repository (AF).<br/>
-<br/>
-Advanced Inputs (Optional): <br/>
---remove_buried -> Boolean, default True. If True, will use FreeSaSa to determine which residues are solvent innaccessible and remove them from consideration. <br/>
---reject_interspecies -> Boolean/String, defaults False. If True, will reject protein pairs that are of different species. If a species is named, will only consider pairs of that species.<br/>
---protein -> String. Will limit the analysis to protein pairs that contain at least 1 of the desired protein.<br/>
---change_species -> String. Will manually overwrite the identified species.<br/>
---crosslinker_size -> Integer. Will manually overwrite the crosslinker arm distance. Will not change the name of the crosslinker<br/>
---continue_from -> \<Protein1_Protein2\>. Will skip protein pairs until reaching the desired one, then will continue the analysis normally. Useful in cases where analysis was prematurelly stopped. <br/>
-<br/>
---fix_partial_prot -> Boolean, default True. If False, will attempt to reconstruct the whole protein using PDBFixer. Not recommended<br/>
---skip_simulation1 -> Boolean, default False. If True, will skip checking interprotein crosslinks. Automatically done in intraprotein cases.<br/>
---skip_haddock -> Boolean, default False. If True, will skip the docking portion of the code using haddock. Either provide your own docked structure under OpenMM_sim/\<Protein1_Protein2.pdb\> or skip second simulation.<br/>
---skip_simulation2 -> Boolean, default False. If True, will skip checking for interprotein crosslinks.<br/>
+
 <br/>
 * Notes<br/>
 If a specific PDB/Fasta files are to be used, simply place the files ```Protein_Species.pdb``` or ```Protein_Species.fa``` under the ```pdb_fa_files/``` folder.<br/>
