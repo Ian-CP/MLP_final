@@ -20,7 +20,7 @@ If coarse-grained protocol is to be used<br/>
 * martini_openmm 0.1<br/>
 * vermouth (Martinizer) 0.10.0<br/>
 <br/>
-# Example
+# Example<br/>
 PREX1 - <br/>
 NF1 - Homodimer <br/>
 AFF4 - HIV1 Heterodimer <br/>
