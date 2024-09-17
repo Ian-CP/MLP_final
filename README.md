@@ -3,7 +3,7 @@ Modular Linux Production, final version (1.0)
 <br/>
 
 # Requirements
-* Linux - Ubuntu > 18.0<br/>
+* Linux Environment
 
 * Python > 3.7<br/>
 * OpenMM 8.1.1<br/>
