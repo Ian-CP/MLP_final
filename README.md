@@ -24,7 +24,7 @@ If coarse-grained protocol is to be used<br/>
 # Examples
 NF1 - Homodimer <br/>
 ```
-$ python modular_linux_production_AA6.py -i input -o output --protein NF1 --reject_interspecies HUMAN
+$ python modular_linux_production_AA6.py -i input -o output -f XLMS_NF1_filtered.csv --protein NF1 --reject_interspecies HUMAN
 ```
 <br/>
 
@@ -36,7 +36,7 @@ $ python modular_linux_production_AA6.py -i input -o output --protein PREX1 --re
 
 <br/>TSC1/TSC2/TBCD7 - multimer <br/>
 ```
-$ python modular_linux_production_AA6.py -i input -o output --reject_interspecies HUMAN 
+$ python modular_linux_production_AA6.py -i input -o output -f TSC_WIPI3_multimer_peptides.csv --reject_interspecies HUMAN 
 ```
 <br/>
 
