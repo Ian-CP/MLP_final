@@ -24,9 +24,11 @@ If coarse-grained protocol is to be used<br/>
 # Examples
 NF1 - Homodimer <br/>
 ```$ python modular_linux_production_AA6.py -i input -o output --protein NF1 --reject_interspecies HUMAN```<br/>
-<br/>PREX1 - <br/>
 
-AFF4 - HIV1 Heterodimer <br/>
+<br/>PREX1 - Single protein<br/>
+```$ python modular_linux_production_AA6.py -i input -o output --protein PREX1 --reject_interspecies HUMAN --skip_haddock --skip_simulation2```<br/>
+
+<br/>AFF4 - HIV1 Heterodimer <br/>
 
 # Usage
 Basic inputs: <br/>
