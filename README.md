@@ -22,13 +22,15 @@ If coarse-grained protocol is to be used<br/>
 <br/>
 
 # Examples
-PREX1 - <br/>
 NF1 - Homodimer <br/>
+```$ python modular_linux_production_AA6.py -i input -o output --protein NF1 --reject_interspecies HUMAN```<br/>
+<br/>PREX1 - <br/>
+
 AFF4 - HIV1 Heterodimer <br/>
 
 # Usage
 Basic inputs: <br/>
-```>> $ python modular_linux_production_AA4.py -i <input_folder> -o <output_folder>```<br/><br/>
+```$ python modular_linux_production_AA4.py -i <input_folder> -o <output_folder>```<br/><br/>
 -i -> Directory. Contains the CSV files with the crosslinked results.<br/>
 -o -> Directory. Will contain all of the outputs from the code, separated by each pair of linked proteins<br/>
 
